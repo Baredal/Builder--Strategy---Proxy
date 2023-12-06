@@ -12,7 +12,7 @@ public class MailInfo  {
         return code.generateText(client);
     }
 
-    public String subject() {
+    public String getSubject() {
         return code.getSubject();
     }
 

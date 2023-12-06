@@ -46,7 +46,7 @@ public class MailSender {
                                     .to(new SendContact(clientsEmail))
                                     .from(new SendContact("WRITE HERE REGISTERED EMAIL ON MAILJET FROM WHICH EMAILS WILL BE SENT"))
                                     .htmlPart(mailInfo.generateText())
-                                    .subject(mailInfo.subject())
+                                    .subject(mailInfo.getSubject())
                                     .trackOpens(TrackOpens.ENABLED)
                                     .build();
         SendEmailsRequest request = SendEmailsRequest
